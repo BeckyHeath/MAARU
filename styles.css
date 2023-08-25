@@ -28,6 +28,14 @@ nav ul li a {
     text-decoration: none;
 }
 
+.schematic {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+
 main {
     padding: 20px;
 }
