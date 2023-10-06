@@ -4,13 +4,28 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    font-size: 18px;
+    padding-top: 10em;
+    padding-bottom: 5em
 }
 
 header {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #f2e8cf;
+    color: #bc4749;
     text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 1em;
+    z-index: 1000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* ensure it spans the full width */
+    z-index: 1000; /* put it above other content */
 }
 
 nav ul {
@@ -24,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #bc4749;
     text-decoration: none;
 }
 
@@ -50,7 +65,7 @@ th, td {
 }
 
 th {
-    background-color: #f0f0f0; /* Light grey header background */
+    background-color: #bc4749; /* Light grey header background */
 }
 
 /* Optional: Curved edges for the first and last cells in the top row */
@@ -67,8 +82,8 @@ main {
 }
 
 footer {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #f2e8cf;
+    color: #bc4749;
     text-align: center;
     padding: 1em;
     position: fixed;
@@ -78,8 +93,15 @@ footer {
 
 @media (min-width: 768px) {
     main {
-        max-width: 70%; /* or whatever you reckon looks best */
+        max-width: 60%; 
         margin-left: auto;
         margin-right: auto;
     }
+
+    table {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
