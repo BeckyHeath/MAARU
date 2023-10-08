@@ -28,6 +28,15 @@ header {
     z-index: 1000; /* put it above other content */
 }
 
+ul {
+    list-style-type: circle; /* This changes the bullets to circles; default is disc */
+    padding-left: 20px; /* Adjusts the space from the left edge */
+}
+
+li {
+    margin-bottom: 10px; /* Adds a bit of space between each list item */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -42,6 +51,23 @@ nav ul li a {
     color: #bc4749;
     text-decoration: none;
 }
+
+.bullet-list {
+    list-style-type: disc; /* Classic bullet points */
+    padding-left: 20px;  
+}
+
+.bullet-list li {
+    display: block; 
+    margin-bottom: 10px; /
+}
+
+.bullet-list li a {
+    color: #bc4749; 
+    text-decoration: none; 
+}
+
+
 
 .schematic {
     width: 80%;
@@ -86,7 +112,6 @@ footer {
     color: #bc4749;
     text-align: center;
     padding: 1em;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -99,7 +124,7 @@ footer {
     }
 
     table {
-        max-width: 40%;
+        max-width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
