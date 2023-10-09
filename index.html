@@ -197,16 +197,19 @@
 
             <h3>Preparing for setup:</h3>
             <p>
-                - Activate SIM card (set up data plan, usually you’ll need to put it in your phone +make a phone call off the number before the SIM will work for data) 
+                Activate SIM card (set up data plan, usually you’ll need to put it in your phone +make a phone call off the number before the SIM will work for data) 
                 
-            <h3>Setting up the Pi (just mains power first) </h3>
-                
-                - Set up the ReSpeaker 6-Mic hat. Full instructions on the ReSpeaker website. You’ll want to connect the circular array to the ReSpeaker HAT by the ribbon cable as below: <br>
-                 
-                Then attach the HAT to the Pi by the 40-pin header (don’t worry about affixing it all together with the white plastic screws. – you won’t need them). <br> 
-                - Insert the SIM card into the HUAWEI dongle <br>
-                - Connect the dongle to the Raspberry Pi via the USB extension cable <br>
-                
+            <h3>Setting up the Pi </h3>
+
+            TIP: Power the Rpi from mains when you do this it’ll be a lot easier! <br>
+
+            <ul class="bullet-list">
+                <li><a href="#">Set up the ReSpeaker 6-Mic hat. Full instructions on the ReSpeaker website. You’ll want to connect the circular array to the ReSpeaker HAT by the ribbon cable as below: </a></li>
+                <li><a href="#">Then attach the HAT to the Pi by the 40-pin header (don’t worry about affixing it all together with the white plastic screws. – you won’t need them).</a></li>
+                <li><a href="#">Insert the SIM card into the HUAWEI dongle</a></li>
+                <li><a href="#">Connect the dongle to the Raspberry Pi via the USB extension cable </a></li>
+            </ul>
+                                
             <h3>Setting up the OS:</h3>
                 
             <ul class="bullet-list">
@@ -218,56 +221,61 @@
                 <li><a href="#">If all is working fine you can power down and unplug the keyboard/screen and mouse </a></li>
             </ul>
                 
-                if you run into any trouble, email me (rh862@cam.ac.uk)
-                
-                TIP: Power the Rpi from mains when you do this it’ll be a lot easier! <br>
-                GENERAL TIP: Don’t unplug the power cable at any point when using the Pi, it’ll mess with it all. If you want to stop using the Pi, make sure you shut down properly (sudo halt). You can also switch off the power source just don’t unplug it! <br>
+                If you run into any trouble, feel free to email me (rh862@cam.ac.uk) <br>
+            
+                TIP: Don’t unplug the power cable at any point when using the Pi, it’ll mess with it all. If you want to stop using the Pi, make sure you shut down properly (sudo halt). You can also switch off the power source just don’t unplug it! <br>
                 
             <h3>Setting up the Powering System:</h3>
-                - Connect the AWG10 cable to the solar panel. You can do this either by stripping and soldering this to the existing wire or by attaching the new cables directly to the panel (Keep note of the negative and positive terminals). 
-                - Connect the Solar panel to the Solar charge controller by the AWG10 wire. Ensure you connect positive to positive and negative to negative! 
-                - Connect the Battery to the solar charge controller. You can use the AWG10 for this or I’ve often just used the wires that came with the panel/ solar charge controller set. Again, ensure you connect positive to positive and negative to negative!
-                
-                - Go through the settings on the Solar Charge Controller and make sure it all matches up to you battery. Especially: running voltage and battery type. (This will maintain battery quality for longer!) 
-                - Attach the 12V to 5V step-down to the power out terminus on the Solar Charge Controller. Ensure the terminals match up and that the 12V side is attached to the solar charge controller. 
-                - Depending on the type of step-down converter you have you may need a USBC adaptor. 
-                - Plug the power source into the Pi
+            <ul class="bullet-list">
+                <li><a href="#">Connect the AWG10 cable to the solar panel. You can do this either by stripping and soldering this to the existing wire or by attaching the new cables directly to the panel (Keep note of the negative and positive terminals). </a></li>
+                <li><a href="#">Connect the Solar panel to the Solar charge controller by the AWG10 wire. Ensure you connect positive to positive and negative to negative! </a></li>
+                <li><a href="#">Connect the Battery to the solar charge controller. You can use the AWG10 for this or I’ve often just used the wires that came with the panel/ solar charge controller set. Again, ensure you connect positive to positive and negative to negative!</a></li>
+                <li><a href="#">Go through the settings on the Solar Charge Controller and make sure it all matches up to you battery. Especially: running voltage and battery type. (This will maintain battery quality for longer!) </a></li>
+                <li><a href="#">Attach the 12V to 5V step-down to the power out terminus on the Solar Charge Controller. Ensure the terminals match up and that the 12V side is attached to the solar charge controller. </a></li>
+                <li><a href="#">Depending on the type of step-down converter you have you may need a USBC adaptor. </a></li>
+                <li><a href="#">Plug the power source into the Pi </a></li>
+            </ul>
+      
                 TIP: You can control whether the power is running to the Pi or not by the button on the solar charge controller
             
-            <h3>Setting up the Waterproofing: </h3>    
+            <h3>Setting up the Waterproofing: </h3>
+
                 Tip: Power down and unplug the device from the power source while you’re setting up the waterproofing 
-                Rpi + Microphone Waterproofing.
-                - Prepare the Tupperware: The Rpi and microphone array will be housed inside a Sistema Tupperware. In order to prepare the Tupperware you’ll need to drill a 1x3cm hole in the bottom of the box and 6+2 holes in the lid. The hole at the bottom of the main box will allow for power/data wires to exit the Tupperware. The 6 circular holes on top will line up with the MEMS microphones on the array while the 2 other holes will line up with two other protrusions on the surface of the array.
-                Once all the holes have been made, sand down the edges and surrounding area to reduce risk of damage and increase surface area for adhesives to attach. 
-                 
-                - Waterproof the front of the Tupperware: 
-                - attach the IPRO vents to the mic holes. 
-                - lay electric tape over the other two holes and cover with sealant. 
-                 
-                <br>
-                - Close up the Tupperware: 
+                
+                <h4>Rpi + Microphone Waterproofing.</h4>
                 <ul class="bullet-list">
+                    <li><a href="#">Prepare the Tupperware: The Rpi and microphone array will be housed inside a Sistema Tupperware. In order to prepare the Tupperware you’ll need to drill a 1x3cm hole in the bottom of the box and 6+2 holes in the lid. The hole at the bottom of the main box will allow for power/data wires to exit the Tupperware. The 6 circular holes on top will line up with the MEMS microphones on the array while the 2 other holes will line up with two other protrusions on the surface of the array.
+                        Once all the holes have been made, sand down the edges and surrounding area to reduce risk of damage and increase surface area for adhesives to attach. </a></li>
+                    <li><a href="#">attach the IPRO vents to the mic holes.</a></li>
+                    <li><a href="#">lay electric tape over the other two holes and cover with sealant. </a></li>
                     <li><a href="#">Put the raspberry Pi inside with the cables to the power source and the Huawei dongle coming out the bottom. Seal up the bottom with electric tape and clear sealant.</a></li>
                     <li><a href="#">Put cut-to-size polystarine in the tuppwerware so that the array is pushed flush with the lid of the Tupperware when closed. </a></li>
                     <li><a href="#">Put some silica in the Tupperware </a></li> 
                     <li><a href="#">Snap shut and cover the edges with Sniper tape.</a></li> 
                 </ul>
                  
-                Power Source Waterproofing.
-                - Insulate the exposed battery terminals with electric tape 
-                - In a Dri-Bag put the battery, solar charge controller and a couple of bags of silica
-                - The only wires coming out of the dri-bag should be the AWG10 to the solar panel and the power cable to the Raspberry Pi         
+                <h4> Power Source Waterproofing.</h4>
+                <ul class="bullet-list">
+                    <li><a href="#">Insulate the exposed battery terminals with electric tape </a></li>
+                    <li><a href="#">In a Dri-Bag put the battery, solar charge controller and a couple of bags of silica</a></li>
+                    <li><a href="#">The only wires coming out of the dri-bag should be the AWG10 to the solar panel and the power cable to the Raspberry Pi </a></li>
+                </ul>
                 
-                Preparation + Attachment in Situ: 
-                Solar Panel: 
-                - Attach 4x hooks in the corners of the solar panel as above
-                - Attach lifting slings to the solar panels via carabiners 
-                - Make a small hole in the canopy of the target tree, use the slings to attach the panel in place 
-                
-                Rpi, Microphone and Power source: 
-                - Strap a Kwiklock to the back of the Tupperware using sniper tape
-                - Strap the kwik-lok to the tree at desired height
-                - The dongle and the dri-bag containing the power source can be attached at this height using the same or an additional kwik-lok. 
+            <h3>Preparation + Attachment in Situ:</h3>
+
+            <h4>Solar Panel:</h4>
+                <ul class="bullet-list">
+                    <li><a href="#">Attach 4x hooks in the corners of the solar panel as above</a></li>
+                    <li><a href="#">Attach lifting slings to the solar panels via carabiners </a></li>
+                    <li><a href="#">Make a small hole in the canopy of the target tree, use the slings to attach the panel in place </a></li>
+                </ul>
+
+            <h4>Rpi, Microphone and Power source: </h4>
+                <ul class="bullet-list">
+                    <li><a href="#">Strap a Kwiklock to the back of the Tupperware using sniper tape</a></li>
+                    <li><a href="#">Strap the kwik-lok to the tree at desired height</a></li>
+                    <li><a href="#">The dongle and the dri-bag containing the power source can be attached at this height using the same or an additional kwik-lok. </a></li>
+                </ul>
                 </p>
         </section>
 
