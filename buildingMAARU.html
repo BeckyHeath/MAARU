@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multichannel Ecoacoustic Recording</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MAARU</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About MAARU</a></li>
+                <li><a href="kitList.html">Kit List</a></li>
+                <li><a href="buildingMAARU.html">Building MAARU</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>     
+            <h2>Building MAARU</h2>
+            
+            <p>MAARU can be build cheaply and easily using just a power drill and a screwdriver, <b>I promise!</b></p>
+
+
+            <h3>Preparing for setup:</h3>
+            <p>
+                Activate SIM card (set up data plan, usually you’ll need to put it in your phone +make a phone call off the number before the SIM will work for data) 
+                
+            <h3>Setting up the Pi </h3>
+
+            <b>TIP:</b> Power the Rpi from mains when you do this it’ll be a lot easier! <br>
+
+            <ul class="bullet-list">
+                <li>Set up the ReSpeaker 6-Mic hat. Full instructions on the ReSpeaker website. You’ll want to connect the circular array to the ReSpeaker HAT by the ribbon cable as below:</li>
+                <li>Then attach the HAT to the Pi by the 40-pin header (don’t worry about affixing it all together with the white plastic screws. – you won’t need them).</li>
+                <li>Insert the SIM card into the HUAWEI dongle</li>
+                <li>Connect the dongle to the Raspberry Pi via the USB extension cable</li>
+            </ul>
+                                
+            <h3>Setting up the OS:</h3>
+                
+            <ul class="bullet-list">
+                <li>Get a Screen, Keyboard and Mouse ready and plugged into your Raspberry Pi.</li>
+                <li>Using a Laptop/ Computer Write Raspbian_full-2020-02-14 to the micro–SD Card (FULL DETAILS: https://github.com/BeckyHeath/multi-channel-rpi-eco-monitoring).</li>
+                <li>Insert the MicroSD to the Raspberry Pi </a></li>
+                <li>Power on the Raspberry Pi*, do not install updates, and follow the setup instructions at https://github.com/BeckyHeath/multi-channel-rpi-eco-monitoring.</li>
+                <li>You can check the device is working by rebooting and watching the screen to see if recordings are happening, compressing and being sent off correctly.</li>
+                <li>If all is working fine you can power down and unplug the keyboard/screen and mouse</li>
+            </ul>
+            
+                <b>TIP:</b>Don’t unplug the power cable at any point when using the Pi, it’ll mess with it all. If you want to stop using the Pi, make sure you shut down properly (sudo halt). You can also switch off the power source just don’t unplug it! <br>
+                
+            <h3>Setting up the Powering System:</h3>
+            <ul class="bullet-list">
+                <li>Connect the AWG10 cable to the solar panel. You can do this either by stripping and soldering this to the existing wire or by attaching the new cables directly to the panel (Keep note of the negative and positive terminals).</li>
+                <li>Connect the Solar panel to the Solar charge controller by the AWG10 wire. Ensure you connect positive to positive and negative to negative!</li>
+                <li>Connect the Battery to the solar charge controller. You can use the AWG10 for this or I’ve often just used the wires that came with the panel/ solar charge controller set. Again, ensure you connect positive to positive and negative to negative!</li>
+                <li>Go through the settings on the Solar Charge Controller and make sure it all matches up to you battery. Especially: running voltage and battery type. (This will maintain battery quality for longer!)</li>
+                <li>Attach the 12V to 5V step-down to the power out terminus on the Solar Charge Controller. Ensure the terminals match up and that the 12V side is attached to the solar charge controller.</li>
+                <li>Depending on the type of step-down converter you have you may need a USBC adaptor.</li>
+                <li>Plug the power source into the Pi</li>
+            </ul>
+      
+                <b>TIP:</b> You can control whether the power is running to the Pi or not by the button on the solar charge controller
+            
+            <h3>Setting up the Waterproofing: </h3>
+
+                Tip: Power down and unplug the device from the power source while you’re setting up the waterproofing 
+                
+                <h4>Rpi + Microphone Waterproofing.</h4>
+                <ul class="bullet-list">
+                    <li>Prepare the Tupperware: The Rpi and microphone array will be housed inside a Sistema Tupperware. In order to prepare the Tupperware you’ll need to drill a 1x3cm hole in the bottom of the box and 6+2 holes in the lid. The hole at the bottom of the main box will allow for power/data wires to exit the Tupperware. The 6 circular holes on top will line up with the MEMS microphones on the array while the 2 other holes will line up with two other protrusions on the surface of the array.
+                        Once all the holes have been made, sand down the edges and surrounding area to reduce risk of damage and increase surface area for adhesives to attach.</li>
+                    <li>attach the IPRO vents to the mic holes.</a></li>
+                    <li>lay electric tape over the other two holes and cover with sealant. </a></li>
+                    <li>Put the raspberry Pi inside with the cables to the power source and the Huawei dongle coming out the bottom. Seal up the bottom with electric tape and clear sealant.</li>
+                    <li>Put cut-to-size polystarine in the tuppwerware so that the array is pushed flush with the lid of the Tupperware when closed.</li>
+                    <li>Put some silica in the Tupperware</li> 
+                    <li>Snap shut and cover the edges with Sniper tape.</li> 
+                </ul>
+                 
+                <h4> Power Source Waterproofing.</h4>
+                <ul class="bullet-list">
+                    <li>Insulate the exposed battery terminals with electric tape</li>
+                    <li>In a Dri-Bag put the battery, solar charge controller and a couple of bags of silica</li>
+                    <li>The only wires coming out of the dri-bag should be the AWG10 to the solar panel and the power cable to the Raspberry Pi</li>
+                </ul>
+                
+            <h3>Preparation + Attachment in Situ:</h3>
+
+            <h4>Solar Panel:</h4>
+                <ul class="bullet-list">
+                    <li>Attach 4x hooks in the corners of the solar panel as above</li>
+                    <li>Attach lifting slings to the solar panels via carabiners</li>
+                    <li>Make a small hole in the canopy of the target tree, use the slings to attach the panel in place </li>
+                </ul>
+
+            <h4>Rpi, Microphone and Power source: </h4>
+                <ul class="bullet-list">
+                    <li>Strap a kwik-lock to the back of the Tupperware using sniper tape</li>
+                    <li>Strap the kwik-lock to the tree at desired height</li>
+                    <li>The dongle and the dri-bag containing the power source can be attached at this height using the same or an additional kwik-lok.</li>
+                </ul>
+                </p>
+
+
+            </main>
+    
+            <footer>
+                <p>Copyright © 2023 Becky Heath</p>
+            </footer>
+            
+            <script src="script.js"></script>
+        </body>
+        </html>
+        

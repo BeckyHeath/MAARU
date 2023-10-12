@@ -1,18 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: tahoma , sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #1E1E24;
     font-size: 18px;
     padding-top: 10em;
     padding-bottom: 5em
 }
 
 header {
-    background-color: #f2e8cf;
-    color: #bc4749;
+    background-color: #FFBF81;
+    color: #FFFFFF;
+    font-size: 20px;
     text-align: center;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -20,13 +26,6 @@ header {
     z-index: 1000;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* ensure it spans the full width */
-    z-index: 1000; /* put it above other content */
-}
 
 ul {
     list-style-type: circle; /* This changes the bullets to circles; default is disc */
@@ -48,8 +47,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #bc4749;
+    color: #FFFFFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .bullet-list {
@@ -59,42 +59,37 @@ nav ul li a {
 
 .bullet-list li {
     display: block; 
-    margin-bottom: 10px; /
+    margin-bottom: 10px;
 }
 
 .bullet-list li a {
-    color: #bc4749; 
+    color: #1E1E24; 
     text-decoration: none; 
 }
 
-
-
-.schematic {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto; 
-}
 
 table {
     width: 100%;
     border-collapse: separate; /* Allows for rounded corners */
     border-spacing: 0; /* Removes space between cells */
-    border: 2px solid #333; /* Dark grey border */
+    border: 2px solid #3FA9F5; /* Dark grey border */
     border-radius: 10px; /* Curved edges */
 }
 
 th, td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #333; /* Dark grey thin lines */
+    border: 1px solid #3FA9F5; /* Dark grey thin lines */
 }
 
 th {
-    background-color: #bc4749; /* Light grey header background */
+    background-color: #D5DADD;
+    color: #1E1E24;
+    vertical-align: middle;
+    text-align: center;
 }
 
-/* Optional: Curved edges for the first and last cells in the top row */
+
 th:first-child {
     border-top-left-radius: 8px;
 }
@@ -104,12 +99,30 @@ th:last-child {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    
+}
+
+
+.schematic-container {
+    width: 90vw;
+    max-width: 1300px;
+}
+
+.schematic {
+    width: 100%;
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
-    background-color: #f2e8cf;
-    color: #bc4749;
+    background-color: #FFBF81;
+    color: #3FA9F5;
+    font-weight: bold;
     text-align: center;
     padding: 1em;
     bottom: 0;
@@ -117,10 +130,16 @@ footer {
 }
 
 @media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
     main {
         max-width: 60%; 
         margin-left: auto;
         margin-right: auto;
+        width: 90vw;
+        max-width: 1300px;
     }
 
     table {
