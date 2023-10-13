@@ -9,11 +9,10 @@
 </head>
 <body>
     <header>
-        <h1>MAARU</h1>
+        <h2><a href="index.html">MAARU</a></h2>
         <nav>
             <ul>
-                <li><a href="index.html">About MAARU</a></li>
-                <li><a href="kitList.html">Kit List</a></li>
+                <li><a href="spatialacoustics.html">Spatial Acoustics</a></li>
                 <li><a href="buildingMAARU.html">Building MAARU</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -23,14 +22,21 @@
     <main>     
             <h2>Building MAARU</h2>
             
-            <p>MAARU can be build cheaply and easily using just a power drill and a screwdriver, <b>I promise!</b></p>
+            <p>MAARU recorders can be built cheaply and easily using just a power drill and a screwdriver. You’ll need to make sure you have all the kit first,
+                so please see our non-exhaustive <a herf="kitList.html"> Kit List.</a> </p>
+
+            <img src="images/Rpi-Array.png" alt = "Illustration of a Raspberry Pi, with a HAT, connectec to a 
+            multichannel microphone array", 
+            class = "tech-illustrations">
 
 
-            <h3>Preparing for setup:</h3>
-            <p>
-                Activate SIM card (set up data plan, usually you’ll need to put it in your phone +make a phone call off the number before the SIM will work for data) 
+            <h3>The Basics:</h3>
+
+            <p>the ReSpeaker 6-microphone array to the ReSpeaker HAT via the ribbon cable as above. Then, 
+                attach the HAT and the array to the Pi via the 40-pin header on your raspberry Pi. </p> 
+
                 
-            <h3>Setting up the Pi </h3>
+            <h3>Setting up the operating system </h3>
 
             <b>TIP:</b> Power the Rpi from mains when you do this it’ll be a lot easier! <br>
 
@@ -42,19 +48,40 @@
             </ul>
                                 
             <h3>Setting up the OS:</h3>
+
+            <p>You’ll need Wi-Fi or network connection to get everything set up. If you’re looking to autonomise your device by connecting it to mobile
+                 networks, you can set that up now: </p>
+
+                 <ul class="bullet-list">
+                    <li>Pay for a network subscription and activate your SIM card. SIM card activation usually involves making 
+                        a phone call from your phone with the SIM inserted but can vary network-to-network. Make sure you can connect 
+                        to the internet via the SIM on your phone first</li>
+                    <li>Put the SIM into the USB dongle. </li>
+                    <li>Plug the USB dongle into the raspberry pi.  </a></li>
+                </ul>     
                 
-            <ul class="bullet-list">
-                <li>Get a Screen, Keyboard and Mouse ready and plugged into your Raspberry Pi.</li>
-                <li>Using a Laptop/ Computer Write Raspbian_full-2020-02-14 to the micro–SD Card (FULL DETAILS: https://github.com/BeckyHeath/multi-channel-rpi-eco-monitoring).</li>
-                <li>Insert the MicroSD to the Raspberry Pi </a></li>
-                <li>Power on the Raspberry Pi*, do not install updates, and follow the setup instructions at https://github.com/BeckyHeath/multi-channel-rpi-eco-monitoring.</li>
-                <li>You can check the device is working by rebooting and watching the screen to see if recordings are happening, compressing and being sent off correctly.</li>
-                <li>If all is working fine you can power down and unplug the keyboard/screen and mouse</li>
-            </ul>
+            <p>There are two options for setting up the operating system. 1) you can download our prebuilt OS here [link] 
+                on to a micro-SD card or 2) <a href="https://github.com/BeckyHeath/multi-mic-recorder-analysis">follow instructions to set it up yourself here.</a> </p>
             
-                <b>TIP:</b>Don’t unplug the power cable at any point when using the Pi, it’ll mess with it all. If you want to stop using the Pi, make sure you shut down properly (sudo halt). You can also switch off the power source just don’t unplug it! <br>
+            <p>Once you've set up the operating system to a micro-SD, insert the micro-SD into your Raspberry Pi. You'll want to check that everything
+                is working okay, so plug the Raspberry Pi into a screen and turn it on. It should pop up with information about 
+                the recording, compression, and transmission status of the audio. If it's all working fine you can power down safely, and you're
+                ready to go. You can look at our suggested methods for weatherproofing (here) or you can look at autonomising the device with autonomous power and below.  </p>
+
+            <p><b>TIP:</b>Be careful not to suddenly unplug the raspberry Pi at any point. It’ll mess with the system. Instead, if you want to turn off the Pi: </p>
+            <ul class = "bullet-list">
+                <li>Press the button in the center of the array and wait for it to power down. </li>
+                <li>Type “sudo halt” into the command line. </li>
+                <li>Switch off the power source (wall plug or solar charge controller). </li>
+            </ul>
                 
-            <h3>Setting up the Powering System:</h3>
+            <img src="images/powering.png" alt = "Illustration of a solar panel, a battery and a solar charge 
+            controller.", 
+            class = "tech-illustrations">
+
+
+            <h3>Powering:</h3>#
+            
             <ul class="bullet-list">
                 <li>Connect the AWG10 cable to the solar panel. You can do this either by stripping and soldering this to the existing wire or by attaching the new cables directly to the panel (Keep note of the negative and positive terminals).</li>
                 <li>Connect the Solar panel to the Solar charge controller by the AWG10 wire. Ensure you connect positive to positive and negative to negative!</li>

@@ -26,6 +26,14 @@ header {
     z-index: 1000;
 }
 
+header h2 {
+    font-weight: bold;
+}
+
+header h2 a {
+    color: white;
+    text-decoration: none;
+}
 
 ul {
     list-style-type: circle; /* This changes the bullets to circles; default is disc */
@@ -119,6 +127,13 @@ main {
 .schematic {
     width: 100%;
     max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.deployment-schematic {
+    width: 70%;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
 }
