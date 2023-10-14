@@ -106,6 +106,22 @@ th:last-child {
     border-top-right-radius: 8px;
 }
 
+.invisible td, .invisible th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.invisible, .invisible th, .invisible td {
+    border: none;
+}
+
+.instructions, .instructions th, .instructions td {
+    border: none;
+}
+
+
+
+
 main {
     display: flex;
     flex-direction: column;
