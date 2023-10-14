@@ -16,7 +16,7 @@ body {
 header {
     background-color: #FFBF81;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 8px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -24,6 +24,16 @@ header {
     width: 100%;
     padding: 1em;
     z-index: 1000;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header h1 a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
 }
 
 header h2 {
@@ -74,7 +84,6 @@ nav ul li a {
     color: #1E1E24; 
     text-decoration: none; 
 }
-
 
 table {
     width: 100%;
@@ -132,6 +141,7 @@ main {
     margin-right: auto;
     width: 90vw;
     max-width: 1300px;
+    justify-content: center;
 
 }
 
@@ -147,11 +157,17 @@ main {
     margin: 0 auto;
 }
 
+.deployment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .deployment-schematic {
-    width: 70%;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
+    width: 45%;
+    display: inline-block;
+    margin: 0;
 }
 
 .tech-illustrations {
@@ -160,7 +176,6 @@ main {
     display: block;
     margin: 0 auto;
 }
-
 
 footer {
     background-color: #FFBF81;
@@ -204,5 +219,4 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
