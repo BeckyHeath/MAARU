@@ -23,7 +23,7 @@
             <h2>Building MAARU</h2>
             
             <p>MAARU recorders can be built cheaply and easily using just a power drill and a screwdriver. You’ll need to make sure you have all the kit first,
-                so please see our non-exhaustive <a herf="kitList.html"> Kit List.</a> </p>
+                so please see our non-exhaustive <a href="#kit-list">Kit List</a></p>
 
             <img src="images/Rpi-Array.png" alt = "Illustration of a Raspberry Pi, with a HAT, connectec to a 
             multichannel microphone array", 
@@ -32,7 +32,7 @@
 
             <h3>The Basics:</h3>
 
-            <p>the ReSpeaker 6-microphone array to the ReSpeaker HAT via the ribbon cable as above. Then, 
+            <p>The ReSpeaker 6-microphone array to the ReSpeaker HAT via the ribbon cable as above. Then, 
                 attach the HAT and the array to the Pi via the 40-pin header on your raspberry Pi. </p> 
 
                 
@@ -80,17 +80,46 @@
             class = "tech-illustrations">
 
 
-            <h3>Powering:</h3>#
-            
-            <ul class="bullet-list">
-                <li>Connect the AWG10 cable to the solar panel. You can do this either by stripping and soldering this to the existing wire or by attaching the new cables directly to the panel (Keep note of the negative and positive terminals).</li>
-                <li>Connect the Solar panel to the Solar charge controller by the AWG10 wire. Ensure you connect positive to positive and negative to negative!</li>
-                <li>Connect the Battery to the solar charge controller. You can use the AWG10 for this or I’ve often just used the wires that came with the panel/ solar charge controller set. Again, ensure you connect positive to positive and negative to negative!</li>
-                <li>Go through the settings on the Solar Charge Controller and make sure it all matches up to you battery. Especially: running voltage and battery type. (This will maintain battery quality for longer!)</li>
-                <li>Attach the 12V to 5V step-down to the power out terminus on the Solar Charge Controller. Ensure the terminals match up and that the 12V side is attached to the solar charge controller.</li>
-                <li>Depending on the type of step-down converter you have you may need a USBC adaptor.</li>
-                <li>Plug the power source into the Pi</li>
-            </ul>
+            <h3>Powering:</h3>
+
+            <p>Here we explain how to power your MAARU autonomously with solar power. If you have mains connection available you can just 
+                plug into the wall. Similarly solar panels can be subbed for wind or other renewable power sources. </p>
+
+            <p><b>If you don't want to power MAARU autonomously...</b> you should plug your pre-charged battery into a solar charge controller. Or
+            if you are chosing to use a power bank with inbuilt charge moderation, you can plug right into the Pi</p>
+
+            <p>For solar powered deployments...</p>
+
+
+            <table class="instructions">
+                <tr>
+                  <td></td>
+                  <td>Connect the AWG10 cable to the solar panel. You can do this either by stripping and soldering this to the existing wire or by attaching the new cables directly to the panel (Keep note of the negative and positive terminals).</td>
+                </tr>
+                <tr>
+                    <td><img src="images/solar-scc.png" alt="Your Image Description" width="200"></td>
+                    <td>Connect the solar panel to the solar charge controller by the AWG10 wire. Ensure you connect positive to positive and negative to negative. Left two terminals in the picture here.</td>
+                </tr>
+                <tr>
+                    <td><img src="images/battery-scc.png" alt="Your Image Description" width="200"></td>
+                    <td>Connect the Battery to the solar charge controller (middle two terminals). You can use the AWG10 for this or I’ve often just used the wires that came with the panel/ solar charge controller set. Again, ensure you connect positive to positive and negative to negative.
+                        <b>Note:</b> the solar panel isn’t attached here, but if for your field deployments make sure that it is. 
+                        </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Go through the settings on the Solar Charge Controller and make sure it all matches up to your battery. Especially: running voltage and battery type. This will maintain battery quality for longer</td>
+                </tr>
+                <tr>
+                    <td><img src="images/scc-stepdown.png" alt="Your Image Description" width="200"></td>
+                    <td>Attach the 12V to 5V step-down to the power out terminus on the Solar Charge Controller. Ensure the terminals match up and that the 12V side is attached to the solar charge controller. Right two terminals here. <b>Note:</b> Depending on the type of step-down converter you have you may need a USBC adaptor. </td>
+                </tr>
+                <tr>
+                    <td><img src="images/whole-device.png" alt="Your Image Description" width="200"></td>
+                    <td>Plug the power source into the Pi</td>
+                </tr>
+              </table>
+
       
                 <b>TIP:</b> You can control whether the power is running to the Pi or not by the button on the solar charge controller
             
@@ -99,40 +128,194 @@
                 Tip: Power down and unplug the device from the power source while you’re setting up the waterproofing 
                 
                 <h4>Rpi + Microphone Waterproofing.</h4>
-                <ul class="bullet-list">
-                    <li>Prepare the Tupperware: The Rpi and microphone array will be housed inside a Sistema Tupperware. In order to prepare the Tupperware you’ll need to drill a 1x3cm hole in the bottom of the box and 6+2 holes in the lid. The hole at the bottom of the main box will allow for power/data wires to exit the Tupperware. The 6 circular holes on top will line up with the MEMS microphones on the array while the 2 other holes will line up with two other protrusions on the surface of the array.
-                        Once all the holes have been made, sand down the edges and surrounding area to reduce risk of damage and increase surface area for adhesives to attach.</li>
-                    <li>attach the IPRO vents to the mic holes.</a></li>
-                    <li>lay electric tape over the other two holes and cover with sealant. </a></li>
-                    <li>Put the raspberry Pi inside with the cables to the power source and the Huawei dongle coming out the bottom. Seal up the bottom with electric tape and clear sealant.</li>
-                    <li>Put cut-to-size polystarine in the tuppwerware so that the array is pushed flush with the lid of the Tupperware when closed.</li>
-                    <li>Put some silica in the Tupperware</li> 
-                    <li>Snap shut and cover the edges with Sniper tape.</li> 
-                </ul>
+
+                <p>We present here two different methods of weatherproofing for MAARU, depending on whether or not you have access to a 3D Printer. For both, you’ll need acoustic weatherproof vents (details in kit list).  </p>
+
+                <p>In both cases the described housing only covers the Raspberry Pi, and multichannel array. The battery and solar charge controller should be stored separately in a dri-bag to reduce interference. </p>
+
+                <table class="invisible">
+                    <tr>
+                      <td><img src="images/wholeshebang.jpg" alt="Your Image Description" width="200"></td>
+                      <td><img src="images/device-deployment01.jpg" alt="Your Image Description" width="200"></td>
+                    </tr>
+                </table>
+
+
+                <table class="instructions">
+                    <tr>
+                      <td><img src="images/Sealedtuppholes.png" alt="Your Image Description" width="200"></td>
+                      <td>Drill a 1x3cm hole in the bottom of the box and 6+2 holes in the lid. The hole at the bottom of the main box will allow for power/data wires to exit the Tupperware. The 6 circular holes on top will line up with the MEMS microphones on the array while the 2 other holes will line up with two other protrusions on the surface of the array. Once all the holes have been made, sand down the edges and surrounding area to reduce risk of damage and increase surface area for adhesives to attach.
+
+                        Attach the IPRO vents to the mic hole and lay electric tape over the other two holes and cover with sealant.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/attach-dongle.jpeg" alt="Your Image Description" width="200"></td>
+                        <td>Put the raspberry Pi inside with the cables to the power source and the Huawei dongle coming out the bottom. Seal up the bottom with electric tape and clear sealant.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/diy-wp-square.png" alt="Your Image Description" width="200"></td>
+                        <td>Put silica in the case and snap shut. Seal the edges with 2 layers of sniper tape. </td>
+                    </tr>
+                </table>
+
                  
-                <h4> Power Source Waterproofing.</h4>
-                <ul class="bullet-list">
-                    <li>Insulate the exposed battery terminals with electric tape</li>
-                    <li>In a Dri-Bag put the battery, solar charge controller and a couple of bags of silica</li>
-                    <li>The only wires coming out of the dri-bag should be the AWG10 to the solar panel and the power cable to the Raspberry Pi</li>
-                </ul>
+            <h4> 3D Printed Case</h4>
+
+            <p>Details TBC</p>
+
+            <img src="images/3Dp-wp.jpeg" alt="Your Image Description" width="600">
+
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <h2 id="kit-list">Kit List</h2>
+
+
+            <p>This section contains the full component list, associated costs (prices rounded up and accurate as of August 2023),
+                and purchase links. Note this has been setup for deployment in the UK and is not exhaustive of compatible elements. 
+                Other equipment with the same specification should work just as well. 
+            </p>
+            <p>MAARU can be deployed to suit different levels of required autonomy. Powering and Networking can be altered to suit local resource availibily</p>
+    
+            <h3>Core Device:</h3>
+            <p>for all MAARU deployment types</p>
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td>Raspberry Pi 4 (4GB)</td>
+                    <td>£55</td>
+                    <td><a href = "https://thepihut.com/products/raspberry-pi-4-model-b?variant=20064052740158">here</a></td>
+                </tr>
+    
+                <tr>
+                    <td>ReSpeaker 6-Mic Circular Array</td>
+                    <td>£37</td>
+                    <td><a href = "https://coolcomponents.co.uk/products/respeaker-6-mic-circular-array-kit-for-raspberry-pi?currency=GBP&variant=12564587249725&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=CjwKCAjwoqGnBhAcEiwAwK-OkQ8w9J4wKc_dK3ToqrJtJ6Zg_hq6N3Q97dn8_hAks15ursWNgRsiMhoCzAIQAvD_BwE">here</a></td>
+                </tr>
+                <tr>
+                    <td>High speed micro-SD card 256GB+</td>
+                    <td>£22</td>
+                    <td><a href = "https://www.amazon.co.uk/dp/B09X7CRKRZ/ref=twister_B0BG5YQP69?_encoding=UTF8&th=1">here</a></td>
+                </tr>
+            </table>
+    
+            <h3>Weatherproofing, Teathering and Other</h3>
+    
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td>Waterproof container (sandwich box)</td>
+                    <td>£2</td>
+                    <td><a href = "https://www.amazon.co.uk/Sistema-Sandwich-ml-Assorted-Colours-Contrasting/dp/B071G1MZK8?ref_=ast_sto_dp&th=1">here</a></td>
+                </tr>
+                <tr>
+                    <td>Acoustic Vents (x6) </td>
+                    <td>£3/vent</td>
+                    <td><a href = "https://www.ipromembrane.com/portable-electronics-vents/waterproof-mobile-phone-mic-vent-ip68-10m-30min/">here</a></td>
+                </tr>
+                <tr>
+                    <td>Waterproof fabric tape</td>
+                    <td>£18</td>
+                    <td><a href = "https://www.amazon.co.uk/Fabric-Webbing-Scapa-Genuine-British/dp/B00HBTYC7A/ref=sxts_rp_s_1_0?content-id=amzn1.sym.07198d44-a16f-4503-b71e-3f4c67470a0f%3Aamzn1.sym.07198d44-a16f-4503-b71e-3f4c67470a0f&crid=2JH2IB84KRGO2&cv_ct_cx=sniper+tape&keywords=sniper+tape&pd_rd_i=B00HBTYC7A&pd_rd_r=ee7acd5d-25be-414a-a319-6489ed6f0a3b&pd_rd_w=OoTrG&pd_rd_wg=9RiE0&pf_rd_p=07198d44-a16f-4503-b71e-3f4c67470a0f&pf_rd_r=WS9J5N4B93HEF7VRZ7V1&qid=1693003718&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=sniper+tape%2Caps%2C81&sr=1-1-1890b328-3a40-4864-baa0-a8eddba1bf6a">here</a></td>
+                </tr>
+                <tr>
+                    <td>Electical insulation tape</td>
+                    <td>£1</td>
+                    <td><a href = "https://www.wickes.co.uk/Deta-Black-PVC-Electrical-Insulation-Tape---20m-x-19mm/p/710074">here</a></td>
+                </tr>
+                <tr>
+                    <td>Clear silicone sealant</td>
+                    <td>£7</td>
+                    <td><a href = "https://www.sainsburys.co.uk/gol-ui/product/ProductDisplay?storeId=10151&productId=1235682&langId=44&istCompanyId=1e096408-041f-4238-994e-a7cf46bf9413&istFeedId=689af7a8-5842-4d88-be59-1ee5688a81b5&istItemId=wrpprmtlq&istBid=t&&cmpid=cpc&utm_source=Google&utm_medium=cpc&utm_campaign=20291373287&utm_content=shopping&utm_term=%7bsku%7d&utm_custom1=&utm_custom2=759-449-0952&gclid=CjwKCAjwoqGnBhAcEiwAwK-OkYwk3QDeRyUjhLKTYWlBwyfjHy-3xNYeZX8LBhhz-jr6A7sOaeccvBoCWa8QAvD_BwE&gclsrc=aw.ds">here</a></td>
+                </tr>
+                <tr>
+                    <td>Silica gel packets</td>
+                    <td>15p/packet</td>
+                    <td><a href = "https://www.kitepackaging.co.uk/scp/protection-and-wrapping/silica-gel/?sfpartno=SGEL-10&gad=1&gclid=CjwKCAjwoqGnBhAcEiwAwK-OkcN4o9YI1VXG_T_F3YSMP-IukAwByimaHrl0wu-59pH-Dt1EZw-lTxoCHvcQAvD_BwE">here</a></td>
+                </tr>
+            </table>
+    
+            <h3>Autonomous Powering (optional):</h3> 
+            
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td>60W 12V Solar Panel</td>
+                    <td>£62</td>
+                    <td><a href=https://www.amazon.co.uk/Renogy-Watts-Volts-Monocrystalline-Camping/dp/B07HR6KDW1/ref=sr_1_9?crid=1ENHJFQG9ASQL&keywords=60W%2Bsolar%2Bpanel&qid=1692975939&sprefix=60w%2Bsolar%2Bpanel%2Caps%2C90&sr=8-9&th=1>here</a></td>
+                </tr>
+                <tr>
+                    <td>20A Solar charge controller</td>
+                    <td>£11</td>
+                    <td><a href = https://www.amazon.co.uk/Controller-Topcloud-Parameter-Adjustable-Regulator/dp/B08XX6ZPBP/ref=sr_1_5?crid=238EZZSTSSAUP&keywords=12V%2Bsolar%2Bcharge%2Bcontroller&qid=1692976545&sprefix=12v%2Bsolar%2Bcharge%2Bcontroller%2Caps%2C76&sr=8-5&th=1>here</a></td>
+                </tr>
+    
+                <tr>
+                    <td>12V 24Ah LiFEPO4 Deep cycle battery</td>
+                    <td>£137</td>
+                    <td><a href = "https://www.bmstechnologies.co.uk/product/tn-power-lithium-12v-24ah-leisure-battery-lifepo4-tn24/">here</a></td>
+                </tr>
                 
-            <h3>Preparation + Attachment in Situ:</h3>
-
-            <h4>Solar Panel:</h4>
-                <ul class="bullet-list">
-                    <li>Attach 4x hooks in the corners of the solar panel as above</li>
-                    <li>Attach lifting slings to the solar panels via carabiners</li>
-                    <li>Make a small hole in the canopy of the target tree, use the slings to attach the panel in place </li>
-                </ul>
-
-            <h4>Rpi, Microphone and Power source: </h4>
-                <ul class="bullet-list">
-                    <li>Strap a kwik-lock to the back of the Tupperware using sniper tape</li>
-                    <li>Strap the kwik-lock to the tree at desired height</li>
-                    <li>The dongle and the dri-bag containing the power source can be attached at this height using the same or an additional kwik-lok.</li>
-                </ul>
-                </p>
+                <tr>
+                    <td>12V to 5V Step down converter</td>
+                    <td>£10</td>
+                    <td><a href = "https://www.amazon.co.uk/gp/product/B071FT57SV/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1">here</a></td>
+                </tr>
+    
+                <tr>
+                    <td>Armoured 2-core 13AWG power cable </td>
+                    <td>£3/m</td>
+                    <td><a href = "https://uk.rs-online.com/web/p/power-cable/1964662?gb=s">here</a></td>
+                </tr>
+                <tr>
+                    <td>Teathering: slings (x4)</td>
+                    <td>£6/sling</td>
+                    <td><a href = "https://www.liftinggeardirect.co.uk/lifting-slings/2-tonne-round-sling">here</a></td>
+                </tr>
+                <tr>
+                    <td>10L Dry Bag</td>
+                    <td>£8</td>
+                    <td><a href = "https://www.mountainwarehouse.com/animal-pvc-10l-dry-bag-p41652.aspx/Black/?utm_source=google_shopping&utm_medium=cpc&utm_campaign=GB+Whoop+-+All+Products+-+Desktop+-+SHOPPING+UK&utm_term=&utm_content=s|pcrid|249777979179|pkw||pmt||pdv|c|slid||product|049397005001|&gclid=CjwKCAjwoqGnBhAcEiwAwK-OkezgBfrVJe9PQBCPvlqx1o9e0lCl7P4CEpth3mPQaIdVRtRsiuJc6xoCqAMQAvD_BwE">here</a></td>
+                </tr>
+            </table>
+    
+            <h3>Networking (optional):</h3>
+    
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td>4GB USB Dongle</td>
+                    <td>£40</td>
+                    <td><a href = "https://www.amazon.co.uk/Huawei-E3372-Cat4-Modem-E3372H-153-White/dp/B013UURTL4/ref=sr_1_2?crid=2A5GZD13PWJOX&keywords=Huawei%2BE3372h-320%2B(2020)%2C%2BLTE%2F4G%2B150%2BMbps%2BUSB%2BDongle%2C&qid=1693003178&s=electronics&sprefix=huawei%2Be3372h-320%2B2020%2Blte%2F4g%2B150%2Bmbps%2Busb%2Bdongle%2B%2Celectronics%2C82&sr=1-2&th=1">here</a></td>
+                </tr>
+    
+                <tr>
+                    <td>Unlimited data SIM card</td>
+                    <td>£20/month</td>
+                    <td><a href = "https://smarty.co.uk/order/unlimited">here</a></td>
+                </tr>
+            </table>
+    
+            <p></p>
+            <p></p>
 
 
             </main>
