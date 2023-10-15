@@ -23,7 +23,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1em;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 header h1 {
