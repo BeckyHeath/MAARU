@@ -30,6 +30,20 @@ p, span {
 }
 
 
+h2 {
+    font-family: titles, helvetica, arial, sans-serif ;
+    font-size: 32px; 
+    font-weight: bold; 
+    color: var(--dark-grey-text); 
+    margin-top: 0; 
+    margin-bottom: 5px;
+    text-align: center;  /* Centre the title, but you can change to left or right if you want */
+    letter-spacing: 2px;  /* Spaces out the letters a bit; adjust or remove if not wanted */
+    background-color: var(--cust-orange);
+    border-radius: 3px;
+}
+
+
 
 body {
     margin: 0;
@@ -115,6 +129,32 @@ header nav li a:hover {
     height: auto;
     display: left;
 }
+
+
+.bird-schematic{
+    width: 350px; 
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.bird-schematic img {
+    width: 100%;
+    height: auto;
+    display: left;
+}
+
+.spatial-acoustics{
+    width: 350px; 
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.spatial-acoustics img {
+    width: 100%;
+    height: auto;
+    display: left;
+}
+
 
 .text-pic-container{
     display: flex;
