@@ -230,12 +230,18 @@ header nav li a:hover {
 
 .white-background {
     background-color: white;
-    padding-bottom: 30px;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
 }
 
 .grey-background {
     background-color: var(--light-grey);
-    padding-bottom: 30px;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
 }
 
 
