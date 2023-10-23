@@ -168,6 +168,20 @@ header nav li a:hover {
     text-align: center;
 }
 
+.text-top {
+    flex-direction: column;
+  }
+
+
+.invisible img {
+    width: 120px; 
+    height: auto;
+}
+
+.invisible {
+    margin: auto;
+}
+
 .image-horizontal{
     width: 5%; 
     margin: 0 auto;
@@ -253,6 +267,7 @@ header nav li a:hover {
     padding: 0px 5%; /* shorthand for padding */
     text-align: left; 
 }
+
 
 .kit-list-container {
     display: flex;
