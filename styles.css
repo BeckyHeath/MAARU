@@ -24,11 +24,14 @@
     font-style: normal; 
 }
 
-
 p, span {
     font-family: 'body-text', Helvetica, Arial, sans-serif, sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
 
 h2 {
     font-family: titles, helvetica, arial, sans-serif ;
@@ -113,7 +116,7 @@ header nav li a:hover {
 .hero-title {
     padding-top: 50px;
     padding-left: 40px;
-    font-size: 3em; 
+    font-size: 1.5em; 
     font-weight: bold;
     font-family: titles, helvetica, arial, sans-serif;
     text-align: left;
@@ -131,8 +134,42 @@ header nav li a:hover {
 
 }
 
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.row:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.row > div {
+    flex: 1;
+    padding: 1em;
+}
+
+.row img {
+    width: 90%;
+    height: auto;
+  }
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .image-horizontal{
-    width: 35%; 
+    width: 5%; 
     margin: 0 auto;
     padding-left: 40px;
 }
@@ -186,8 +223,8 @@ header nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px; 
+    padding-top: 4%;
+    padding-bottom: 4%; 
     text-align: center; 
 }
 
@@ -210,16 +247,13 @@ header nav li a:hover {
     text-align: left; 
 }
 
-.main-text{
+.main-text {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 5%;
-    padding-right: 5%; 
+    justify-content: center; /* vertically align the content */
+    padding: 0px 5%; /* shorthand for padding */
     text-align: left; 
 }
+
 .kit-list-container {
     display: flex;
     flex-direction: column;  
@@ -239,21 +273,34 @@ header nav li a:hover {
 }
 
 
-.white-background {
+.title-background {
     background-color: white;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+
+.white-background {
+    display: flex;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    height: 100%;
+}
+
 .grey-background {
+    display: flex;
     background-color: var(--light-grey);
     padding-left: 5%;
     padding-right: 5%;
+    align-items: center; 
+    height: 100%;
 }
 
 
-/* a is the anchor points (links) */
 
+/* a is the anchor points (links) */
 .in-text-link {
     text-decoration: none;
     background-color: var(--cust-orange);
@@ -388,4 +435,22 @@ footer {
     .info-box {
         min-width: calc(50% - 20px); /* 2 items minus the margin */
     }
+    
 }
+
+@media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    .row img{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .container{
+        padding-left: 5%;
+        padding-right:5%;
+    }
+
+  }
