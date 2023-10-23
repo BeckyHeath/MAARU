@@ -467,6 +467,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header nav {
+        position: absolute;
+        top: 80px;  
+        right: 20px;
+        background-color: rgba(127, 127, 127, 0.5);  
+        border-radius: 2px;  /* Adding a slight curve to the edges */
+    }
+    
     header nav ul {
         display: block;
         overflow: hidden;
@@ -475,7 +483,7 @@ footer {
     }
 
     header nav ul.open {
-        max-height: 400px;  
+        max-height: 100px;  
     }
     .hamburger {
         display: block;
