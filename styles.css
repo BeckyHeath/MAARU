@@ -102,6 +102,19 @@ header nav li a:hover {
     color: var(--cust-orange); 
 }
 
+
+.hamburger {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: var(--dark-grey-text);
+    display: none;
+    cursor: pointer;
+}
+.hamburger:focus {
+    outline: none;
+}
+
 .hero-section {
     margin-top: 0;
     background-image: 
@@ -454,6 +467,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column; /* Since it's vertical now */
+        width: 100%;
+    }
+    .hamburger {
+        display: block;
+    }  
+    
     .row {
       flex-direction: column;
     }
