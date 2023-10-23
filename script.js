@@ -1,8 +1,9 @@
 document.querySelector(".hamburger").addEventListener("click", function() {
-    var menu = document.querySelector("nav ul");
-    if (menu.style.display === "none" || menu.style.display === "") {
-        menu.style.display = "flex";
+    const navMenu = document.querySelector("header nav ul");
+    
+    if (navMenu.classList.contains("open")) {
+        navMenu.classList.remove("open");
     } else {
-        menu.style.display = "none";
+        navMenu.classList.add("open");
     }
 });

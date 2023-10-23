@@ -467,10 +467,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column; /* Since it's vertical now */
-        width: 100%;
+    header nav ul {
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    header nav ul.open {
+        max-height: 400px;  
     }
     .hamburger {
         display: block;
