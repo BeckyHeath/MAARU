@@ -180,6 +180,15 @@ header nav li a:hover {
     text-align: center; 
 }
 
+.text-left-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    text-align: left; 
+}
+
 .top-logo {
     width: 200px;
     height: auto;
