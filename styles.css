@@ -1,7 +1,7 @@
 :root {
     --light-grey: #E7E6E6;
     --dark-grey-text: #0D0D0D ;
-    --orange: #FFBF81;
+    --cust-orange: #FFBF81;
 }
 
 *, *::before, *::after {
@@ -50,6 +50,9 @@ header {
     padding: 0 20px; 
     margin-bottom: 0;
     padding-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
@@ -68,7 +71,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: var(--orange); 
+    color: var(--cust-orange); 
 }
 
 .hero-section {
@@ -128,6 +131,15 @@ header nav li a:hover {
     margin-right: 20px;
 }
 
+.text-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    text-align: center; 
+}
+
 .top-logo {
     width: 200px;
     height: auto;
@@ -136,10 +148,12 @@ header nav li a:hover {
 
 .white-background {
     background-color: white;
+    padding-bottom: 30px;
 }
 
 .grey-background {
     background-color: var(--light-grey);
+    padding-bottom: 30px;
 }
 
 
@@ -147,11 +161,43 @@ header nav li a:hover {
 
 .in-text-link {
     text-decoration: none;
-    background-color: var(--orange);
+    background-color: var(--cust-orange);
     color: var(--dark-grey-text);
     padding: 5px 10px;
     border-radius: 3px;
 }
 .in-text-link:hover {
     background-color: darkorange;
+}
+
+
+footer {
+    background-image: 
+        linear-gradient(rgba(127, 127, 127, 0.6), rgba(127, 127, 127, 0.6)),
+        url('images/horizontal-borderless.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 80px;
+    display: flex;           
+    justify-content: space-between; 
+    align-items: center;    
+    padding: 0 20px; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.footer-text p {
+    margin: 0; 
+    padding: 3px 5px; 
+    color: var(--cust-orange) ;
+    font-family: titles, helvetica, arial, sans-serif;
+    font-style: bolder;
+    font-size: 18px;
+}
+
+.footer-logo {
+    height: 60px; 
+    width: auto;
 }
