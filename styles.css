@@ -280,6 +280,62 @@ td {
 
 
 
+.information-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-box {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 10px;
+    min-width: calc(25% - 20px); /* 4 items minus the margin */
+    height: 200px; /* or whatever height you want */
+    background-color: var(--light-grey); /* or any color */
+    border: 1px solid black; /* or any border style */
+}
+
+.info-box {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 10px;
+    min-width: calc(25% - 20px);
+    height: auto;
+    background-color: var(--light-grey);
+    border: 1px solid --cust-orange;
+    text-align: center; /* Centering text contents */
+    padding: 20px; /* Add some spacing inside the box */
+}
+
+.info-image {
+    width: 100%; /* Making the image take full width */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centering the image */
+}
+
+.info-title {
+    margin: 20px 0; /* Spacing between title and other elements */
+}
+
+.info-links {
+    list-style-type: none; /* Removing bullets */
+    padding: 0; /* Removing default padding */
+    font-family: titles, helvetica, arial, sans-serif;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: var(--dark-grey-text);
+}
+.info-links li {
+    margin-bottom: 10px; /* Space between links */
+}
+
+.info-links a:hover {
+    color: var(--cust-orange);
+}
 
 
 
@@ -312,4 +368,11 @@ footer {
 .footer-logo {
     height: 60px; 
     width: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .info-box {
+        min-width: calc(50% - 20px); /* 2 items minus the margin */
+    }
 }
