@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma , sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #1E1E24;
+    font-size: 18px;
+    padding-top: 10em;
+    padding-bottom: 5em
+}
+
+header {
+    background-color: #FFBF81;
+    color: #FFFFFF;
+    font-size: 8px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 1000; 
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header h1 a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+header h2 {
+    font-weight: bold;
+}
+
+header h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: circle; /* This changes the bullets to circles; default is disc */
+    padding-left: 20px; /* Adjusts the space from the left edge */
+}
+
+li {
+    margin-bottom: 10px; /* Adds a bit of space between each list item */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bullet-list {
+    list-style-type: disc; /* Classic bullet points */
+    padding-left: 20px;  
+}
+
+.bullet-list li {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.bullet-list li a {
+    color: #1E1E24; 
+    text-decoration: none; 
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Allows for rounded corners */
+    border-spacing: 0; /* Removes space between cells */
+    border: 2px solid #3FA9F5; /* Dark grey border */
+    border-radius: 10px; /* Curved edges */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #3FA9F5; /* Dark grey thin lines */
+}
+
+th {
+    background-color: #D5DADD;
+    color: #1E1E24;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.invisible td, .invisible th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.invisible, .invisible th, .invisible td {
+    border: none;
+}
+
+.instructions, .instructions th, .instructions td {
+    border: none;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    max-width: 1300px;
+    justify-content: center;
+
+}
+
+.schematic-container {
+    width: 90vw;
+    max-width: 1300px;
+}
+
+.schematic {
+    width: 100%;
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.deployment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.deployment-schematic {
+    width: 45%;
+    display: inline-block;
+    margin: 0;
+}
+
+.tech-illustrations {
+    width: 70%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #FFBF81;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        background-color: #FFBF81;
+        color: #FFFFFF;
+        font-size: 15px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 3em;
+        z-index: 1000;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    main {
+        max-width: 60%; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        max-width: 1300px;
+    }
+
+    table {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
