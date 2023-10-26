@@ -177,7 +177,12 @@ header nav li a:hover {
 .row img {
     width: 90%;
     height: auto;
-  }
+}
+
+.row img.funders {
+    height: 60px;
+    width: auto;
+}
 
 .text-center {
     font-family: titles;
@@ -202,12 +207,9 @@ header nav li a:hover {
     margin: auto;
 }
 
-
-.invisible-contacts img {
-    max-width: 30vm; 
-    height: auto;
-    display: block;
-    margin: auto;
+.row-text-top img {
+    height: 200px;
+    width: auto;
 }
 
 .invisible-contacts {
