@@ -208,8 +208,8 @@ header nav li a:hover {
 }
 
 .row-text-top img {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 15vw;
 }
 
 .invisible-contacts {
