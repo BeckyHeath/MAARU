@@ -166,7 +166,7 @@ header nav li a:hover {
 }
 
 .row:nth-child(even) {
-    background-color: lightgrey;
+    background-color: #E7E6E6;
 }
 
 .row > div {
