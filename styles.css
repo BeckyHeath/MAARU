@@ -450,6 +450,21 @@ td {
 
 
 
+.person-role {
+    display: inline-block;
+    font-family: titles, helvetica, arial, sans-serif;
+    font-style: italic;
+    font-size: 0.8em;
+    color: var(--dark-grey-text);
+}
+
+.person-email {
+    display: inline-block;
+    font-family: titles, helvetica, arial, sans-serif;
+    font-size: 0.8em;
+    color: var(--dark-grey-text);
+}
+
 a.inherit-style {
     color: inherit; 
     text-decoration: none; 
@@ -519,7 +534,7 @@ footer {
     }
 
     header nav ul.open {
-        max-height: 100px;  
+        max-height: 260px;  
     }
     .hamburger {
         display: block;
