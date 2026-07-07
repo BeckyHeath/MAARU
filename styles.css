@@ -557,41 +557,12 @@ footer {
   }
 
 
-/* Responsive people grid (contacts page) */
-.row-text-top {
-    width: 100%;
-}
-
-.people-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.people-grid .person {
-    flex: 0 0 33.333%;
-    box-sizing: border-box;
-    padding: 1em;
-    text-align: center;
-}
-
-.people-grid .person img {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto 0.5em auto;
-}
-
 /* Paper download link (spatial acoustics) */
 .pdf-link {
     margin-left: 0.6em;
 }
 
 @media (max-width: 768px) {
-    .people-grid .person {
-        flex-basis: 50%;
-    }
-
     .pdf-link {
         display: block;
         margin-left: 0;
