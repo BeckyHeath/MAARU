@@ -35,7 +35,7 @@ img {
 
 h2 {
     font-family: titles, helvetica, arial, sans-serif ;
-    font-size: calc(14px + 0.8vw); 
+    font-size: calc(16.8px + 0.96vw); 
     font-weight: bold; 
     color: var(--dark-grey-text); 
     margin-top: 0; 
@@ -48,7 +48,7 @@ h2 {
 
 h3 {
     font-family: titles, helvetica, arial, sans-serif ;
-    font-size: 20px; 
+    font-size: 24px; 
     font-weight: bold; 
     color: var(--dark-grey-text); 
     margin-top: 0; 
@@ -62,7 +62,7 @@ h3 {
 body {
     margin: 0;
     padding: 0;
-    font-size: calc(11px + 0.3vw);
+    font-size: calc(13.2px + 0.36vw);
 
 }
 
@@ -73,7 +73,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 80px;
+    height: 120px;
     display: flex;           
     justify-content: space-between; 
     align-items: center;    
@@ -95,7 +95,7 @@ header nav ul {
 
 header nav li a {
     text-decoration: none;
-    font-size: 22px;   
+    font-size: 26.4px;   
     color: var(--dark-grey-text); 
     font-family: titles, helvetica, arial, sans-serif;
 }
@@ -319,7 +319,7 @@ header nav li a:hover {
 
 
 .top-logo {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
@@ -484,7 +484,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 80px;
+    height: 120px;
     display: flex;           
     justify-content: space-between; 
     align-items: center;    
@@ -500,11 +500,11 @@ footer {
     color: var(--cust-orange) ;
     font-family: titles, helvetica, arial, sans-serif;
     font-style: bolder;
-    font-size: 18px;
+    font-size: 21.6px;
 }
 
 .footer-logo {
-    height: 60px; 
+    height: 90px; 
     width: auto;
 }
 
@@ -515,12 +515,12 @@ footer {
     }
 
     body {
-        font-size: 12px;
+        font-size: 14.4px;
     }
 
     header nav {
         position: absolute;
-        top: 80px;  
+        top: 120px;  
         right: 20px;
         background-color: rgba(127, 127, 127, 0.9);  
         border-radius: 2px; 
